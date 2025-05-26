@@ -1,0 +1,91 @@
+    /* Form container with off-white background */
+  .ibw-container {
+    background: #f9f9f9; /* off-white */
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px); /* optional glassy look */
+  }
+  
+  .gender-selection {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+  }
+  
+  .gender-option {
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+  }
+  
+  .gender-option.active {
+    opacity: 1;
+  }
+  
+  .gender-option img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .ibw-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .ibw-form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .weight-input,
+  .height-input {
+    position: relative;
+    flex: 1;
+  }
+  
+  .unit-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #eaeaea;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    pointer-events: none;
+  }
+  
+  .unit-button.active {
+    background: #00c060;
+    color: #fff;
+  }
+  
+  .calculate-button {
+    background: beige;
+    color: #333;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .calculate-button:hover {
+    background: #f5deb3;
+  }
+  
